@@ -1,0 +1,199 @@
+/**
+ * Custom styles for the application
+ */
+:root {
+    --header-height: 60px;
+    --footer-height: 40px;
+}
+
+/* General layout */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header and navigation */
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* Camera interface */
+.camera-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #1a1a1a;
+    border-radius: 0.25rem;
+}
+
+.camera-container video {
+    width: 100%;
+    height: auto;
+    max-height: 50vh;
+    object-fit: cover;
+}
+
+.camera-controls {
+    margin-top: 1rem;
+}
+
+#capture-canvas {
+    display: none;
+}
+
+/* Visualization canvas */
+.visualization-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: #1a1a1a;
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+
+#visualization-canvas {
+    width: 100%;
+    height: 100%;
+    cursor: grab;
+}
+
+#visualization-canvas:active {
+    cursor: grabbing;
+}
+
+.visualization-controls {
+    margin-top: 0.5rem;
+}
+
+/* Changes panel */
+.changes-panel {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.changes-panel .list-group-item {
+    cursor: pointer;
+}
+
+.changes-panel .list-group-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.changes-panel .list-group-item.active {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+/* Processing overlay */
+#processing-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+    flex-direction: column;
+}
+
+.spinner-container {
+    text-align: center;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Toast notifications */
+#toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1100;
+}
+
+.toast {
+    min-width: 250px;
+}
+
+/* Details panel */
+.details-panel {
+    margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+    padding: 1rem 0;
+    margin-top: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .camera-container video {
+        max-height: 40vh;
+    }
+    
+    .visualization-container {
+        height: 300px;
+    }
+    
+    .changes-panel {
+        max-height: 200px;
+    }
+}
+
+@media (min-width: 992px) {
+    .camera-container video {
+        max-height: 60vh;
+    }
+    
+    .visualization-container {
+        height: 500px;
+    }
+}
+
+/* Dark mode theme enhancements */
+.card {
+    border-color: rgba(255, 255, 255, 0.125);
+}
+
+.card-header {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.btn-outline-light:hover {
+    color: #000;
+}
+
+/* Status bar */
+.status-bar {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+}
+
+/* Animation */
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.6; }
+    100% { opacity: 1; }
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
