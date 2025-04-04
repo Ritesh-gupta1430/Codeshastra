@@ -1,0 +1,46 @@
+Problem Statement
+Tracking environmental changes in dynamic spaces is critical
+for security, inventory management, and space optimization.
+Existing methods rely on manual inspection or resourceintensive processing, making real-time monitoring inefficient.
+The challenge is to develop an AI-powered application that
+enables users to scan a space, detect differences in
+subsequent scans, and provide actionable insights in an
+optimized and user-friendly manner.
+Challenge:
+Develop an AI-powered application capable of detecting and
+highlighting changes in dynamic spaces by comparing
+sequential scans. The solution should efficiently process room
+scans, identify differences, and provide actionable insights while
+running on mobile or edge devices.
+Context Open innovation
+Tracking environmental changes is crucial for various
+industries, including security, inventory management, and
+space optimization. Businesses need a lightweight, efficient, and
+user-friendly tool to detect modifications in spaces such as
+hotel rooms, offices, warehouses, or retail shelves. Traditional
+methods for monitoring changes rely on manual inspection or
+resource-intensive processing, creating a need for an AI-driven,
+real-time alternative.
+Primary Objectives:
+Initial Room Mapping: Enable users to scan and create a
+baseline reference of a pace, storing structural and objectrelated information.
+Change Detection: Identify and categorize new, removed, or
+repositioned objects upon subsequent scans.Optimized Room Processing: Minimize computational load
+by focusing only on areas with detected changes instead of
+reprocessing the entire space.
+Custom Lightweight Model: Develop an AI model optimized
+for mobile or edge devices, ensuring efficient performance.
+User-Friendly Visualization: Provide an interactive UI/UX
+with visual indicators of detected changes.
+Bonus Features
+Object Categorization & Smart Alerts: Classify objects and
+generate alerts for specific changes (e.g., security alerts for
+missing items).
+Multi-Scan Analysis: Track long-term changes across
+multiple scans and analyze usage patterns over time.
+Integration with External Systems: Allow integration with
+inventory management, security systems, or facility
+management tools for enhanced automation.
+
+
+give it details in proepr flow and we can approach solyution
